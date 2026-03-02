@@ -783,7 +783,7 @@ def process_deposit_amount(message):
         
         bot.send_message(message.chat.id, 
                         f"💵 Выберите способ пополнения:\n\n"
-                        f"🏦 Пополнить другим способом? Легко! Админ ждет вас тут: @KyRGyzsTaN_404 😊\n\n"
+                        f"🏦 Пополнить другим способом? Легко! Админ ждет вас тут: @famelonov 😊\n\n"
                         f"Сумма к оплате: {amount_rub:.2f} RUB\n",
                         reply_markup=markup)
         
@@ -1444,4 +1444,5 @@ if __name__ == '__main__':
             bot.polling(none_stop=True, interval=0, timeout=20)
         except Exception as e:
             print(f"Ошибка при запуске бота: {e}")
+
             time.sleep(5)
